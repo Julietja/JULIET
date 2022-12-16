@@ -5,7 +5,7 @@
  --main-red: #be3144;
  --main-blue: #0088a9;
 }
-
+/*General settings*/
 *{
  margin: 0;
  padding: 0;
@@ -31,32 +31,79 @@ header{
  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
 }
 
+.logo-container{
+  width: 160px;
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: white;
+ }
+ 
+ .logo-icon{
+  width: 24px;
+  height: 15px;
+  background-color:  #0088a9;
+  color: white;
+  text-align: center;
+ }
+
+ .cv{
+  background-color: #be3144;
+  padding: 6px;
+  width: 90px;
+  border: none;
+  border-radius: 5px;
+  align-self: center;
+  margin-top: 20px;
+ }
+
+ .cv a{
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+ }
+ main{
+  width: 100%;
+  color: white;
+ }
+ 
+/* Styles for features visible only on desktop */
 .desktop-menu{
 display: none;
+  align-items: center;
+  gap: 30px;
+  }
+
+.desktop-menu a{
+text-decoration: none;
+color: white;
+font-weight: 600;
+  }
+
+.desktop-menu a:hover{
+background: white;
+color: black;
+height: 35px;
+padding: 10px;
+display: flex;
+align-items: center;
 }
 
-main{
- width: 100%;
- color: white;
+.call-me{
+display: none;
+width: 80px;
+background: white;
+padding: 10px;
+margin-right: 40px;
+color: black;
+border: none;
+border-radius: 5px;
+font-weight: 600;
 }
 
-.logo-container{
- width: 120px;
- font-size: 8px;
- display: flex;
- align-items: center;
- gap: 2px;
- color: white;
-}
-
-.logo-icon{
- width: 24px;
- height: 15px;
- background-color:  #0088a9;
- color: white;
- text-align: center;
-}
-
+/* Styles for features visible only on mobile */
 .dropdown-menu .dropbutn{
  border: none;
  height: 30px;
@@ -124,23 +171,6 @@ border-bottom: 1px solid rgb(194, 192, 192);
  .hero p{
   font-size: 0.9rem;
   font-weight: 400;
- }
-
- .hero #cv{
-  background-color: #be3144;
-  padding: 6px;
-  width: 90px;
-  border: none;
-  border-radius: 5px;
-  align-self: center;
-  margin-top: 20px;
- }
-
- .hero #cv a{
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
-  font-weight: 600;
  }
 
 /* general styles for sections*/
@@ -341,9 +371,11 @@ font-size: 0.9rem;
      }
   }
 
-/* Settings for small pc screens*/
+/* Settings for large tablet screens*/
 @media screen and (min-width: 768px) {
-  
+  header{
+    padding: 7px 25px;
+   }
   .hero{
     height: 370px;
    }
@@ -391,13 +423,55 @@ font-size: 0.9rem;
    } 
 
  .form-control{
-  width: 350px;
+  width: 400px;
  }
 }
+
+/* Settings for small pc screens*/
+@media screen and (min-width: 978px) {
+  header{
+    height: 30px;
+    padding: 10px 20px;
+    font-size: 14px;
+   }
+   
+   .logo-container{
+    font-size: 9px;
+    gap: 6px;
+   }
+
+   .logo-icon{
+    width: 30px;
+    height: 19px;
+   }
+
+  .desktop-menu{
+    display: flex;
+    }
+
+    .dropdown-menu{
+      display: none;
+    }
+    
+    .call-me{
+      display: inline-block;
+    }
+  }
 
 /* Settings for large pc screens*/
 @media screen and (min-width: 1240px) {
   
+  header{
+    height: 35px;
+    padding: 10px 40px;
+    font-size: 16px;
+   }
+
+   .logo-icon{
+    width: 34px;
+    height: 23px;
+   }
+
   .hero{
     height: 900px;
    }
@@ -409,6 +483,12 @@ font-size: 0.9rem;
    .hero p{
     font-size: 1.6rem;
    }
+
+   .cv{
+    padding: 10px;
+    margin-top: 40px;
+   }
+
    .background {
     padding: 60px 120px;
     }
@@ -419,6 +499,7 @@ font-size: 0.9rem;
     .subtitle{
      font-size: 1.3rem;
     }
+    
     .link{
       font-size: 1.2rem;
     }
