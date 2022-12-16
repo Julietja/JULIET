@@ -359,6 +359,18 @@ font-size: 0.9rem;
  margin-bottom: 10px;
 }
 
+
+/* Styles for heros section of projects page*/
+.projects-page{
+  height: 50px;
+  padding: 10px 40px;
+}
+.projects-page .title{
+  font-size: 12px;
+}
+
+
+
 /* Settings for small tablet screen*/
 @media screen and (min-width: 481px) {
   .projects-wrapper .container{
@@ -428,6 +440,15 @@ font-size: 0.9rem;
  .form-control{
   width: 500px;
  }
+}
+
+/* Styles for heros section of projects page*/
+.projects-page{
+  height: 150px;
+  padding: 20px 40px;
+}
+.projects-page .title{
+  font-size: 18px;
 }
 
 /* Settings for small pc screens*/
@@ -524,5 +545,11 @@ font-size: 0.9rem;
     .link{
       font-size: 1.2rem;
     }
-  
+    .projects-page{
+      height: 350px;
+      padding: 20px 40px;
+    }
+    .projects-page .title{
+      font-size: 28px;
+    }
   }
