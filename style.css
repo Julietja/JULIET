@@ -138,7 +138,7 @@ border-bottom: 1px solid rgb(194, 192, 192);
   font-size: 12px;
   font-weight: 600;
  }
- 
+
 /* general styles for sections*/
 .background {
 background: black;
@@ -198,7 +198,7 @@ margin-bottom: 20px;
  font-weight: 500;
 }
 
-/*Styles for skills section*/
+/*Styles for projects section*/
 .rule{
  margin-bottom: 40px;
  width: 100%;
@@ -324,23 +324,69 @@ font-size: 0.9rem;
 .contact-details .first{
  margin-bottom: 10px;
 }
-@media screen and (min-width: 760px) {
+
+/* Settings for tablet screen*/
+@media screen and (min-width: 481px) {
+  .projects-wrapper .container{
+    width: 280px;
+    max-width: 350px;
+    }
+    .form-control{
+      font-size: 16px;
+      width: 250px;
+     }
+  }
+
+/* Settings for small pc screens*/
+@media screen and (min-width: 768px) {
+  
+  .hero{
+    height: 370px;
+   }
+
+   .hero h1{
+    font-size: 1.8rem;
+   }
+  
+   .hero p{
+    font-size: 1.1rem;
+   }
+
+   .background {
+    padding: 40px 80px;
+    }
+    
+    .title{
+     font-size: 1.2rem;
+    }
+    .subtitle{
+     font-size: 1rem;
+    }
+    .link{
+      font-size: 1rem;
+    }
+
+/*Styles for skills section*/
+ .container{
+  width: 90px;
+ }
+ /*Styles for projects section*/
  .projects-wrapper{
   flex-direction: row;
   justify-content: center;
   gap: 8px;
   }
   .project-image img{
-  height: 300px;
-  }
-  
+    max-width: 500px;
+   }
+   
   .projects-wrapper .container{
    width: 400px;
    height: 230px;
-   margin-top: 40px;
+   margin-top: 20px;
    } 
 
  .form-control{
-  width: 600px;
+  width: 350px;
  }
 }
