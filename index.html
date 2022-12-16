@@ -15,20 +15,29 @@
    <h2 id="logo">Juliet A.</h2>
    <div class="logo-icon"><h2>JA</h2></div>
   </div>
+<!--beginning of desktop menu-->
+<div class="desktop-menu">
+     <a href="index.html">Home</a>
+     <a href="#about">About Me</a>
+     <a href="#skills">Skills</a>
+     <a href="#projects">Projects</a>
+     <a href="#contact">Contact Me</a>
+</div>
+
 <!--beginning of drop-down menu-->
 <div class="dropdown-menu">
   <button class="dropbutn">
    <i class="fa fa-thin fa-bars" id="old-menu"></i>
-   <i class="fa fa-xmark" id="new-menu" style="display: none;"></i>
+   <i class="fa fa-car" id="new-menu" style="display: none;"></i>
   MENU</button>
  
 <!--Add dropdown menu content-->
    <div class="dropdown-content" id="dropdown-list">
-     <a href="index.html">Home</a>
-     <a href="about.html">About Me</a>
-     <a href="#skills">Skills</a>
-     <a href="#projects">Projects</a>
-     <a href="#contact">Contact Me</a>
+     <a href="index.html" class="dropdown-item">Home</a>
+     <a href="#about" class="dropdown-item">About Me</a>
+     <a href="#skills" class="dropdown-item">Skills</a>
+     <a href="#projects" class="dropdown-item">Projects</a>
+     <a href="#contact" class="dropdown-item">Contact Me</a>
   </div>
 </div>
  </header>
@@ -43,14 +52,14 @@
 </section>
 <!--end of hero section-->
 
-<section class="about-section background">
+<section class="about-section background" id="about">
 <h1 class="title">About Me</h1>
 <h3 class="subtitle">I am a creative Frontend Software & Web Developer with 2 years of experience building methodical solutions for companies. I am skilled in transforming designs and prototypes into working, production-ready web-based applications with maximum speed and scalability using modern technologies.</h3>
 <h3 class="link"><a href="about.html">Learn more</a></h3>
 </section>
 <!--end of about section--> 
 
-<section class="skills-section background">
+<section class="skills-section background" id="skills">
 <h1 class="title">My Top Skills</h1>
 <div class="skills-wrapper">
 
@@ -68,7 +77,7 @@
 </section>
 <!--end of skills section-->
 
-<section class="projects background">
+<section class="projects background" id="projects">
    <h1 class="title">These are some of my projects</h1>
    <hr class="rule">
       <div class="projects-wrapper">
@@ -89,7 +98,7 @@
          <div class="container">
          <h3>Netflix Clone</h3>
          <p>This is a clone of the Netflix landing page. Built with HTML and CSS. </p>
-         <button class="view"><a class="btn" href="https://julietja.github.io/jayola-clone/" target="_blank">View Project</a></button>
+         <button class="view"><a class="btn" href="https://jayolazy.netlify.app/" target="_blank">View Project</a></button>
          </div>
          </div>
 
@@ -137,7 +146,7 @@
    </section>
    <!--end of projects section-->
 
-<section class="background contact-section">
+<section class="background contact-section" id="contact">
 <h1 class="title">Contact Me</h1>
 <!-- form fields -->
 <form>
@@ -161,7 +170,7 @@
    <a href="#"><i>Call me</i></a>
 </div>
 <hr class="rule">
-   <p class="first">**This portfolio website was designed and developed by Juliet . You can reach me through any of my contact details.</p>
+   <p class="first">**This portfolio website was designed and developed by Juliet. You can reach me through any of my contact details.</p>
    <p class="second">Created for <a href="https://www.linkedin.com/in/juliet-alaribe"><i>Juliet Alaribe</i></a></p>
 </footer>
 
