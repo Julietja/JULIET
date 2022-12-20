@@ -91,11 +91,11 @@ border-bottom: 1px solid rgb(218, 216, 216);
  color: black;
  border: 1px solid black;
  }
-/*
-.dropdown-menu:hover .dropdown-content{
- display: block;
+
+img{
+width:100px;
+height: auto;
 }
-*/
 
 
 
