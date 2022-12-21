@@ -1,4 +1,3 @@
-
 let butnClick = document.querySelector('.dropbutn');
 let oldMenu = document.getElementById("old-menu");
 let newMenu = document.getElementById("new-menu");
@@ -15,38 +14,20 @@ const changeOldMenu = () => {
 }
 changeOldMenu();
 
-const changeNewMenu = () => {
- newMenu.addEventListener("click", function(){
+function changeMenu(){
  newMenu.style.display = 'none';
  oldMenu.style.display = 'inline-block';
  showDropdown.style.display = 'none';
 }
-)
+
+const changeNewMenu = () => {
+ newMenu.addEventListener("click", changeMenu()
+);
 }
 changeNewMenu();
 
 const removeDropdown = () => {
- clickLink.addEventListener("click", function(){
-  oldMenu.style.display = 'inline-block';
-  newMenu.style.display = 'none';
-  showDropdown.style.display = 'none';
- }
- )
+ clickLink.addEventListener("click", changeMenu(){
+ );
 }
 removeDropdown();
-
-
-
-/*let changeNewMenu = () => {
-
- butnClick.addEventListener("click", function(){
-  newMenu = document.getElementById("new-menu");
-  newMenu.style.display = 'none';
-  oldMenu.style.display = 'block';
-  showDropdown.style.display = 'none';
- }
- )
-}
-
-changeNewMenu();
-*/
