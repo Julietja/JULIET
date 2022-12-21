@@ -3,6 +3,7 @@ let butnClick = document.querySelector('.dropbutn');
 let oldMenu = document.getElementById("old-menu");
 let newMenu = document.getElementById("new-menu");
 let showDropdown = document.getElementById("dropdown-list");
+let clickLink = document.getElementById("dropdown-item");
 
 const changeOldMenu = () => {
  oldMenu.addEventListener("click", function(){
@@ -22,10 +23,17 @@ const changeNewMenu = () => {
 }
 )
 }
-
 changeNewMenu();
 
-
+const removeDropdown = () => {
+ clickLink.addEventListener("click", function(){
+  oldMenu.style.display = 'inline-block';
+  newMenu.style.display = 'none';
+  showDropdown.style.display = 'none';
+ }
+ )
+}
+removeDropdown();
 
 
 
