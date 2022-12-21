@@ -31,6 +31,10 @@ header{
  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
 }
 
+.desktop-menu{
+display: none;
+}
+
 main{
  width: 100%;
  color: white;
