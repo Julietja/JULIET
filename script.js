@@ -2,7 +2,7 @@ let butnClick = document.querySelector('.dropbutn');
 let oldMenu = document.getElementById("old-menu");
 let newMenu = document.getElementById("new-menu");
 let showDropdown = document.getElementById("dropdown-list");
-let clickItem = document.querySelector('.dropdown-item');
+let clickItem = document.getElementsByClassName('dropdown-item');
 
 const changeOldMenu = () => {
  oldMenu.addEventListener("click", function(){
