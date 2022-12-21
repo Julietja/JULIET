@@ -2,7 +2,7 @@ let butnClick = document.querySelector('.dropbutn');
 let oldMenu = document.getElementById("old-menu");
 let newMenu = document.getElementById("new-menu");
 let showDropdown = document.getElementById("dropdown-list");
-let clickLink = document.getElementById("dropdown-item");
+let clickItem = document.querySelector('.dropdown-item');
 
 const changeOldMenu = () => {
  oldMenu.addEventListener("click", function(){
@@ -22,8 +22,15 @@ const changeNewMenu = () => {
 }
 )
 }
-changeNewMenu();
 
+const removeDropdown = () => {
+clickItem.addEventListener("click", function(){
+showDropdown.style.display = 'none';
+}
+)
+}
+changeNewMenu();
+removeDropdown()
 
 /*
 function changeMenu(){
