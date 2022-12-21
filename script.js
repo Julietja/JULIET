@@ -14,6 +14,18 @@ const changeOldMenu = () => {
 }
 changeOldMenu();
 
+const changeNewMenu = () => {
+ newMenu.addEventListener("click", function(){
+ newMenu.style.display = 'none';
+ oldMenu.style.display = 'inline-block';
+ showDropdown.style.display = 'none';
+}
+)
+}
+changeNewMenu();
+
+
+/*
 function changeMenu(){
  newMenu.style.display = 'none';
  oldMenu.style.display = 'inline-block';
@@ -31,3 +43,4 @@ const removeDropdown = () => {
  );
 }
 removeDropdown();
+*/
