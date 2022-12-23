@@ -1,8 +1,6 @@
 <?php
 if (isset($_POST['Email'])) {
-
- 
-    $email_to = "bamarachi6@gmail.com";
+    $email_to = "admin@jayolatech.com";
     $email_subject = "New form submissions";
 
     function problem($error)
