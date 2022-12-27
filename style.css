@@ -96,9 +96,13 @@ align-items: center;
 display: none;
 background: white;
 padding: 8px;
-color: black;
 border: none;
 border-radius: 5px;
+}
+
+.call-me a{
+text-decoration: none;
+color: black;
 font-weight: 500;
 }
 
