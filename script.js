@@ -32,6 +32,10 @@ showDropdown.style.display = 'none';
 changeNewMenu();
 removeDropdown()
 
+function sendEmail(){
+
+}
+
 /*
 function changeMenu(){
  newMenu.style.display = 'none';
