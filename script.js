@@ -34,9 +34,9 @@ removeDropdown()
 
 function sendEmail(){
 Email.send({
-          Host : "smtp.elasticemail.com",
+          Host : "smtp.gmail.com",
           Username : "julietalaribe6@gmail.com",
-          Password : "9F353DA32CCFB95F02CF12DE3D1BB451A984",
+          Password : "Julietjuliet6",
           To : 'bamarachi6@gmail.com',
           From : document.getElementById("email").value,
           Subject : "New Contact Form Submission",
