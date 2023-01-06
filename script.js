@@ -34,17 +34,17 @@ removeDropdown()
 
 function sendEmail(){
 Email.send({
-    SecureToken : "9bdc7d79-bd8c-4fc6-8f63-40321c41aa0f",
-    To : 'julietalaribe6@gmail.com',
-    From : document.getElementById("email").value,
-    Subject : "New Contact Form Submission",
-    Body : "Name: " + document.getElementById("name").value
-     + " <br> Email: " + document.getElementById("email").value
-     + " Phone number: " + document.getElementById("phone").value
-     + " <br> Message: " + document.getElementById("message").value
-}).then(
-  message => alert(Message sent successfully!)
-);
+          SecureToken : "9bdc7d79-bd8c-4fc6-8f63-40321c41aa0f",
+          To : 'julietalaribe6@gmail.com',
+          From : document.getElementById("email").value,
+          Subject : "New Contact Form Submission",
+          Body : "Name: " + document.getElementById("name").value
+          + " <br> Email: " + document.getElementById("email").value
+          + " <br> Phone number: " + document.getElementById("phone").value
+          + " <br> Message: " + document.getElementById("message").value
+          }).then(
+          message => alert("Message sent successfully!")
+          );
 }
 
 /*
